@@ -21,12 +21,16 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.textView);
         Button buttonChangeText = findViewById(R.id.buttonChangeText);
         Button buttonChangeColor = findViewById(R.id.buttonChangeColor);
+        Button buttonChangeBackground = findViewById(R.id.buttonChangeBackground);
 
         buttonChangeText.setOnClickListener(v -> {
             textView.setText("Sveikas Pasauli!!");
         });
         buttonChangeColor.setOnClickListener(v -> {
             textView.setTextColor(Color.CYAN);
+        });
+        buttonChangeBackground.setOnClickListener(v -> {
+            textView.setBackgroundColor(Color.GRAY);
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
