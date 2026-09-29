@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonChangeText = findViewById(R.id.buttonChangeText);
         Button buttonChangeColor = findViewById(R.id.buttonChangeColor);
         Button buttonChangeBackground = findViewById(R.id.buttonChangeBackground);
-        // comment for revert
+
         buttonChangeText.setOnClickListener(v -> {
             textView.setText("Sveikas Pasauli!!");
         });
